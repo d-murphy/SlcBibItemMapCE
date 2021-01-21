@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Suffolk Library Catalog - Map View",
+    "description": "For a given bib item, load a map view to see item availability",
+    "version": "1.0.0",
+    "icons": {"512": "map-search.png"},
+
+    "permissions": [
+//        "tabs"
+      "declarativeContent"
+    ],
+
+    "page_action": {
+      "default_title": "Show map of book locations!",
+      "default_popup": "mapView.html"
+    }, 
+
+    "background": {
+        "scripts": ["background.js", "mapView.js"],
+        "persistent": false
+    }
+    }
