@@ -2,15 +2,45 @@
 <html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="mapView.js" ></script>
-<style>
+<style >
+
+  body {
+    background-color: lightblue;
+    width: 750px;
+  }
+
+  h4 {
+    color: white;
+    text-align: center;
+  }
+
+  .blue {
+    color: red;
+  }
+
+  #mapid { height: 350px; width: 700px;}
+
 </style>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+
 <head>
 <title>Map Search</title>
 </head>
 <body>
-  <h2>I'm working on it</h2>
-  <a href="http://www.google.com" target="new_window">test link</a>
-  <a href="#" onclick="openNewTab()">new function test</a>
+  <div class="blue">
+    <h4>Suffolk County Library Catalog - Map View</h2>
+    <a href="http://www.google.com" target="new_window">test link</a>
+    <a href="#" onclick="openNewTab()">new function test</a>
+
+    <div id="mapid"></div>
+  </div>
 </body>
+<script src="mapView.js" ></script>
 </html>
