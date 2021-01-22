@@ -1,4 +1,3 @@
-
 // When the extension is installed
 chrome.runtime.onInstalled.addListener(function(){
     // Replace all rules
@@ -18,7 +17,4 @@ chrome.runtime.onInstalled.addListener(function(){
       ])
     })
 })
-
-//chrome.pageAction.show();
-
 
